@@ -1,0 +1,25 @@
+body{
+    background : #f0f0f0;
+}
+header{
+    width:100%;
+    height:100vh;
+    background-image: url();
+}
+.navigation a{
+    display: inline-block;
+    color: #4c3d2e;
+    text-align: center;
+    padding: 14px;
+    text-decoration-line: underline;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.navigation a:hover{
+    background-color: #d6a851;
+    color: black;
+}
+.navigation a.active{
+    background-color: blue;
+    color: green;
+}
