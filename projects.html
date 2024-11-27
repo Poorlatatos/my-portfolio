@@ -4,18 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="normalise.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navigation">
-                <a href="index.html">Homepage</a>
-                <a href="socials.html">Socials</a>
-                <a href="blog.html">Blog</a>
-                <a href="art.html">Art</a>
+    <header class="header" id="header">
+
+        <nav class = "navbar containter">
+
+            <a href="./projects.html">
+                <h2 class="logo">Projects</h2>
+            </a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="./index.html" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./blog.html" class="list-link ">Blogs</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./projects.html" class="list-link">Projects</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./socials.html" class="list-link">Socials</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                
+                <button class="btn place-items-center" id="search-icon">
+                    <!--<i class="ri-search-line"></i>-->
+                </button>
+
+                <button class="btn place-items-cente screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+            </div>
         </nav>
+
     </header>
-    
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+            
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="What are you looking for?">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">
+                Or press ESC to close.
+            </span>
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+
+    </div>
+    <script src="./extensions.js"></script>
 </body>
 </html>
