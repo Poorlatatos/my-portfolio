@@ -20,4 +20,14 @@ Changelog - 28/11/2024 - 02:40 a.m.
     - These changes include adding list bars to index.html and projects.html.
     - Adding the same functions of the header from blog.html to the other .html pages.
 - Added in a new html page called welcomepost1.html.
-- Removed art as another page on the list as blogs.html already fufill that purpose.
+- Removed art.html as another page on the list as blogs.html already fufill that purpose.
+
+Changelog - 30/11/2024 - 03:48 a.m.
+- Major changes to project.html and socials.html.
+    - Added in email inquires for socials.html.
+    - Added in social link bubbles for socials.html.
+    - Added in redirectable project page links for projects.html.
+    - Added in a specific tag search bar for blog.html.
+- Minor changes to index.html, socials.html, blog.html, projects.html.
+    - Removed the header search button for stated html files.
+- Added art to projects.html.

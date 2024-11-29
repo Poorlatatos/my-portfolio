@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root{
-    --light-color: #fff;
-    --light-color-alt: #afb6cd;
-    --primary-background-color: #131417;
+    --light-color: #eae0dd;
+    --light-color-alt: #e6e7f0;
+    --primary-background-color: #171819;
     --secondary-background-color: #1e1f26;
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
-    --gradient-color: linear-gradient(90deg, #ff6a00, #ee0979);
+    --gradient-color: linear-gradient(90deg, #d5dc1d, #f6a2a8);
     --transparent-light-color: rgba(255, 255, 255, 0.1);
     --transparent-dark-color: rgba(0, 0, 0, 0.1);
 
@@ -42,6 +42,8 @@ body{
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
     transition: background-color .25s,color .25s;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 a{
@@ -97,6 +99,11 @@ body.light-theme{
 
 .d-grid{
     display: grid;
+}
+
+.a-grid{
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
 .screen-sm-hidden{
@@ -591,10 +598,14 @@ body.light-theme{
 /* Footer */
 .footer{
     background-color: var(--secondary-background-color);
+    clear: both;
+    position: relative;
+    margin-top: 300px;
 }
 
 .footer-container{
     gap: var(--gap);
+    ;
 }
 
 .company-data{
@@ -893,4 +904,220 @@ body.light-theme{
         grid-row: 2/-1;
     }
 
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the floating box */
+.floating-box {
+    background: var(--secondary-background-color);
+    color: var(--light-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px var(--transparent-light-color);
+    animation: float 3s infinite ease-in-out;
+    max-width: 800px;
+    margin-top: 200px;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating-box h2 {
+    font-size: var(--font-size-md);
+    margin-bottom: 1rem;
+}
+
+.floating-box p {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+}
+
+
+/* Container for social circles */
+.social-circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+    margin-top: 200px;
+}
+
+/* Individual social circles */
+.social-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--secondary-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px var(--transparent-light-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-circle a {
+    color: var(--light-color);
+    font-size: 2.4rem;
+}
+
+.social-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px var(--transparent-light-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .social-circle {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .social-circle a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-circle {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .social-circle a {
+        font-size: 1.6rem;
+    }
+}
+
+/* Email form container */
+.email-form-container {
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--secondary-background-color);
+    color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--transparent-light-color);
+    max-width: 600px;
+    text-align: center;
+}
+
+.email-form-container h3 {
+    font-size: var(--font-size-md);
+    margin-bottom: 1.5rem;
+}
+
+.email-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-form-container label {
+    font-size: var(--font-size-sm);
+    text-align: left;
+}
+
+.email-form-container input,
+.email-form-container textarea {
+    padding: 1rem;
+    border: 2px solid var(--transparent-dark-color);
+    border-radius: 5px;
+    font-size: var(--font-size-sm);
+    color: var(--light-color-alt);
+    background: var(--primary-background-color);
+}
+
+.email-form-container input:focus,
+.email-form-container textarea:focus {
+    border-color: var(--gradient-color);
+    outline: none;
+}
+
+.email-form-container button {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-sm);
+    background: var(--gradient-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.email-form-container button:hover {
+    background: var(--hover-dark-color);
+    transform: scale(1.05);
+}
+
+
+/* Search Tags Section */
+.search-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-background-color);
+    color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--transparent-light-color);
+    width: auto;
+    margin-left: 2rem; 
+    margin-top: 8rem;
+    margin-bottom: 2%;
+}
+
+.search-tags h3 {
+    font-size: var(--font-size-md);
+    margin-bottom: 1rem;
+}
+
+#tag-search-input {
+    padding: 0.8rem;
+    font-size: var(--font-size-sm);
+    border: 2px solid var(--transparent-dark-color);
+    border-radius: 5px;
+    background-color: var(--primary-background-color);
+    color: var(--light-color-alt);
+}
+
+#tag-search-input:focus {
+    border-color: var(--gradient-color);
+    outline: none;
+}
+
+.tag-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tag-results li {
+    padding: 0.5rem;
+    background: var(--primary-background-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tag-results li:hover {
+    background: var(--gradient-color);
+    color: var(--light-color);
 }

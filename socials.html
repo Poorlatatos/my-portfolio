@@ -4,24 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Socials</title>
-    <link rel="stylesheet" href="normalise.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navigation">
-            <a href="index.html">Homepage</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-            <a href="art.html">Art</a>
+    <header class="header" id="header">
+
+        <nav class = "navbar containter">
+
+            <a href="./socials.html">
+                <h2 class="logo">Socials</h2>
+            </a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="./index.html" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./blog.html" class="list-link">Blogs</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./projects.html" class="list-link">Projects</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./socials.html" class="list-link current">Socials</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                
+                <button class="btn place-items-center" id="search-icon">
+                    <!--<i class="ri-search-line"></i>-->
+                </button>
+
+                <button class="btn place-items-cente screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+            </div>
         </nav>
+
     </header>
-    <section>
-        <nav class="navigation_socials">
-            <a href="https://www.instagram.com/polatatos/"target="_blank">Instagram</a>
-            <a href="projects.html">BlueSky</a>
-            <a href="blog.html">Itch.io</a>
-        </nav>
-    </section>
+
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+            
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="What are you looking for?">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">
+                Or press ESC to close.
+            </span>
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+
+    </div>
+
+    
+    <div class="social-circle-container">
+        <div class="social-circle">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="ri-bluesky-fill"></i>
+            </a>
+        </div>
+        <div class="social-circle">
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="ri-twitter-fill"></i>
+            </a>
+        </div>
+        <div class="social-circle">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="ri-instagram-line"></i>
+            </a>
+        </div>
+        <div class="social-circle">
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="ri-linkedin-fill"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="email-form-container">
+        <h3>Contact Me!</h3>
+        <form action="mailto:polatatos@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">E-mail Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Inquiry:</label>
+            <textarea id="message" name="message" placeholder="Please contact me for any inquires!" rows="5" required></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+    
+    <footer class="footer section">
+
+        <div class="footer-container container a-grid">
+
+            <div class="company-data">
+                <a href="./socials.html">
+                    <h2 class="logo">Socials</h2>
+                </a>
+                <p class="company-description">
+                    Hey! This is a personal portfolio website where I post my projects, art, and more.
+                </p>
+
+                <span class="copyright-notice">&copy; 2024[Jaasper's Portfolio, All rights reserved]</span>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./extensions.js"></script>
 </body>
 </html>

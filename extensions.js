@@ -66,3 +66,50 @@ themeToggleBtn.addEventListener('click', () => {
 });
 
 //Swiper
+
+// Mock data for blog posts with tags
+const blogPosts = [
+    {
+        title: "A new project being released!",
+        tags: ["project", "update", "release"],
+        link: "./welcomepost1.html"
+    },
+    {
+        title: "Welcome to my first ever proper blog post!",
+        tags: ["introduction", "dev-blog", "welcome"],
+        link: "./welcomepost1.html"
+    },
+    {
+        title: "I just started on this project assignment and I'm very tired.",
+        tags: ["project", "assignment", "personal"],
+        link: "./welcomepost1.html"
+    }
+];
+
+// Search for tags and update results
+const tagSearchInput = document.getElementById("tag-search-input");
+const tagResults = document.getElementById("tag-results");
+
+tagSearchInput.addEventListener("input", () => {
+    const searchQuery = tagSearchInput.value.toLowerCase().trim();
+    tagResults.innerHTML = ""; // Clear previous results
+
+    if (searchQuery) {
+        const filteredPosts = blogPosts.filter(post =>
+            post.tags.some(tag => tag.toLowerCase().includes(searchQuery))
+        );
+
+        if (filteredPosts.length) {
+            filteredPosts.forEach(post => {
+                const li = document.createElement("li");
+                li.textContent = post.title;
+                li.addEventListener("click", () => {
+                    window.location.href = post.link; // Navigate to the blog post
+                });
+                tagResults.appendChild(li);
+            });
+        } else {
+            tagResults.innerHTML = "<li>No posts found.</li>";
+        }
+    }
+});
