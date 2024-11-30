@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Project: Project Kowloon</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="project-styles.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./project-details.css">
 </head>
 <body>
     <header class="header" id="header">
 
         <nav class = "navbar containter">
 
-            <a href="./projects.html">
-                <h2 class="logo">Projects</h2>
+            <a href="ASTEROIDS.html">
+                <h2 class="logo gradient-text-2">Project Kowloon</h2>
             </a>
 
             <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
-                        <a href="./index.html" class="list-link">Home</a>
+                        <a href="/index.html" class="list-link current">Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="./blog.html" class="list-link">Blogs</a>
+                        <a href="/blog.html" class="list-link ">Blogs</a>
                     </li>
                     <li class="list-item">
-                        <a href="./projects.html" class="list-link current">Projects</a>
+                        <a href="/projects.html" class="list-link">Projects</a>
                     </li>
                     <li class="list-item">
-                        <a href="./socials.html" class="list-link">Socials</a>
+                        <a href="/socials.html" class="list-link">Socials</a>
                     </li>
                 </ul>
             </div>
@@ -74,41 +76,54 @@
 
     </div>
 
-    
-
-    <div class="projects-section">
-        <div class="projects">
-            <div class="project">
-                <div class="banner">
-                    <img src="img/EXAMPLE-IMAGE.png" class="bannerImg" alt="" />
-                </div>
-                    <img src="img/EXAMPLE-IMAGE.png" alt="" class="img-removed-media"/>
-                    <a href="projects/ASTEROIDS.html"><h1>ASTEROIDS</h1></a>
-                <span>
-                    <p>Shoot! Avoid! Blast!</p>
-                </span>
-            </div>
-
-            <div class="project">
-                <div class="banner">
-                    <img src="img/EXAMPLE-IMAGE.png" class="bannerImg" alt="" />
-                </div>
-                    <img src="img/EXAMPLE-IMAGE.png" alt="" class="img-removed-media"/>
-                    <a href="projects/Project-Kowloon.html"><h1>ProjectKowloon</h1></a>
-                <span>
-                    <p>Horror in Hong Kong.</p>
-                </span>
-            </div>
-
+    <section class="project-details">
+        <div class="project-intro">
+            <h1>Project: Project Kowloon</h1>
+            <p>
+                In <strong>Project Kowloon</strong> you run around the Walled City of Kowloon, Hong Kong, in a 3D platformer.
+                The game is inspired by the real-life Kowloon Walled City, a densely populated, ungoverned settlement in Hong Kong that was demolished in 1993.
+                This project was created as part of a game jam, and it was a great opportunity to learn about level design, character animation, and game mechanics.
+            </p>
         </div>
-    </div>
+    
+        <!-- Dynamic Image: Gameplay Overview -->
+        <div class="image-section">
+            <img src="./img/gameplay-overview-placeholder.png" alt="Project-Kowloon Overview" class="project-image">
+            <p class="image-caption">Look around and see the spine-chilling thrill of being stuck in an enclosed city.</p>
+        </div>
+    
+        <div class="project-features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>**Exploration**: Traverse the narrow alleyways and rooftops of Kowloon Walled City.</li>
+                <li>**Platforming**: Jump, climb, and swing your way through the city's unique architecture.</li>
+                <li>**Collectibles**: Discover hidden items and secrets scattered throughout the city.</li>
+            </ul>
+        </div>
+    
+        <!-- Dynamic Image: Gameplay Action -->
+        <div class="image-section">
+            <img src="./img/gameplay-action-placeholder.png" alt="Gameplay Action" class="project-image">
+            <p class="image-caption">Evade through all sorts of obstacles in your path.</p>
+        </div>
+    
+        <div class="project-reflection">
+            <h2>Developer's Reflection</h2>
+            <p>
+                Making Project Kowloon was a challenging yet rewarding experience. I learned a lot about game design, level creation, and character animation.
+                The project allowed me to experiment with different mechanics and art styles, and I'm semi-proud of the final result.
+                The problem was I didn't have enough time to polish the game, but I'm happy with what I was able to achieve in the given timeframe.
+                Especially given that I was relatively new to game development at the time.
+            </p>
+        </div>
+    </section>
 
     <footer class="footer section">
 
         <div class="footer-container container a-grid">
 
             <div class="company-data">
-                <a href="./projects.html">
+                <a href="/projects.html">
                     <h2 class="logo">Projects</h2>
                 </a>
                 <p class="company-description">
@@ -137,6 +152,6 @@
 
         </div>
     </footer>
-    <script src="./extensions.js"></script>
+    <script src="/extensions.js"></script>
 </body>
 </html>

@@ -31,3 +31,17 @@ Changelog - 30/11/2024 - 03:48 a.m.
 - Minor changes to index.html, socials.html, blog.html, projects.html.
     - Removed the header search button for stated html files.
 - Added art to projects.html.
+
+Changelog - 1/12/2024 - 04:36 a.m.
+- Happy first of December!
+- Major changes to all .html files.
+    - The changes include adding extra socials to the footer.
+    - Added a copyright section at the footer.
+- Added a few new .html files for Project and Blogs.
+- Included comments as an actual functional system.
+- Gave the comments timestamps.
+- Added a new .js file for like and dislike functions.
+    - Added a like and dislike function for blogs.
+- Added a new .css file for project styling.
+- Added in a gradient effect for project titles.
+- Changed all text boxes to static (Cannot be dragged and resized.)

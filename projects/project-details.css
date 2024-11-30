@@ -1,0 +1,71 @@
+.project-details {
+    padding: 2rem;
+    color: var(--light-color);
+    background-color: var(--primary-background-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--transparent-light-color);
+    margin-top: 70px;
+}
+
+.project-details h1, .project-details h2 {
+    color: var(--gradient-color);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.project-details p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.image-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--transparent-light-color);
+}
+
+.image-caption {
+    font-size: var(--font-size-sm);
+    margin-top: 0.5rem;
+    color: var(--light-color-alt);
+}
+
+.gradient-text-1{
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #741173, #3b46a7, #a479ed, #a31fa1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: gradient-text 10s infinite
+    alternate-reverse;
+}
+
+.gradient-text-2{
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #741111, #a7493b, #ed7996, #a31f3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 300%;
+    background-position: -100%;
+
+    animation: gradient-text 10s infinite
+    alternate-reverse;
+}
+
+@keyframes gradient-text{
+    to{
+        background-position: 100%;
+    }
+}

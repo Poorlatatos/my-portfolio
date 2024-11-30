@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Project: Project Kowloon</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="project-styles.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/project-styles.css">
 </head>
 <body>
     <header class="header" id="header">
 
         <nav class = "navbar containter">
 
-            <a href="./projects.html">
-                <h2 class="logo">Projects</h2>
+            <a href="/blog.html">
+                <h2 class="logo">Dev-blog | Art-Blog</h2>
             </a>
 
             <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
-                        <a href="./index.html" class="list-link">Home</a>
+                        <a href="/index.html" class="list-link current">Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="./blog.html" class="list-link">Blogs</a>
+                        <a href="/blog.html" class="list-link ">Blogs</a>
                     </li>
                     <li class="list-item">
-                        <a href="./projects.html" class="list-link current">Projects</a>
+                        <a href="/projects.html" class="list-link">Projects</a>
                     </li>
                     <li class="list-item">
-                        <a href="./socials.html" class="list-link">Socials</a>
+                        <a href="/socials.html" class="list-link">Socials</a>
                     </li>
                 </ul>
             </div>
@@ -74,42 +76,63 @@
 
     </div>
 
-    
+    <main>
+        <article class="blog-post">
+            <div class="container">
+                <!-- Blog Post Header -->
+                <header class="post-header">
+                    <h1 class="post-title">I just started on this project assignment and I'm very tired.</h1>
+                    <div class="post-meta">
+                        <span>Written by <strong>Jaasper Lee</strong></span>
+                        <div class="article-data">
+                            <span>November-20th-2024</span>
+                            <span class="article-data-spacer"></span>
+                            <span>1-2 min read.</span>
+                        </div>
+                    </div>
+                    <img src="/img/EXAMPLE-IMAGE.png" alt="Project Kowloon Featured Image" class="post-featured-image">
+                </header>
 
-    <div class="projects-section">
-        <div class="projects">
-            <div class="project">
-                <div class="banner">
-                    <img src="img/EXAMPLE-IMAGE.png" class="bannerImg" alt="" />
-                </div>
-                    <img src="img/EXAMPLE-IMAGE.png" alt="" class="img-removed-media"/>
-                    <a href="projects/ASTEROIDS.html"><h1>ASTEROIDS</h1></a>
-                <span>
-                    <p>Shoot! Avoid! Blast!</p>
-                </span>
+                <!-- Like and Dislike Section -->
+                <section class="likes-dislikes">
+                    <button id="like-btn" class="btn"><i class="ri-thumb-up-line"></i> Like <span id="like-count">0</span></button>
+                    <button id="dislike-btn" class="btn"><i class="ri-thumb-down-line"></i> Dislike <span id="dislike-count">0</span></button>
+                </section>
+
+                <!-- Blog Content -->
+                <section class="post-content">
+                    <h2>Introduction</h2>
+                    <p>
+                        Hi there! Welcome to the (as of now) latest development of this portfolio blog. I just started on this entire
+                        blog space with the intention of sharing my projects, art, and thoughts with the world. I hope you enjoy your stay!
+                    </p>
+                    <br></br>   
+                    <p>
+                        There isn't much to say about this blog post, but I hope you enjoy the content I've prepared for you. I've been hard at work
+                        crafting a well-designed and interactive narrative for you to explore. I hope you enjoy it!
+                    </p>
+                </section>
+
+                <!-- Comments Section -->
+                <section class="comments">
+                    <h2>Comments</h2>
+                    <div class="comment-form">
+                        <textarea id="comment-input" placeholder="Leave a comment..." rows="4"></textarea>
+                        <button id="submit-comment" class="btn">Submit</button>
+                    </div>
+                    <ul id="comment-list" class="comment-list"></ul>
+                </section>
             </div>
-
-            <div class="project">
-                <div class="banner">
-                    <img src="img/EXAMPLE-IMAGE.png" class="bannerImg" alt="" />
-                </div>
-                    <img src="img/EXAMPLE-IMAGE.png" alt="" class="img-removed-media"/>
-                    <a href="projects/Project-Kowloon.html"><h1>ProjectKowloon</h1></a>
-                <span>
-                    <p>Horror in Hong Kong.</p>
-                </span>
-            </div>
-
-        </div>
-    </div>
+        </article>
+    </main>
 
     <footer class="footer section">
 
         <div class="footer-container container a-grid">
 
             <div class="company-data">
-                <a href="./projects.html">
-                    <h2 class="logo">Projects</h2>
+                <a href="/blog.html">
+                    <h2 class="logo">Dev-blog | Art-blog</h2>
                 </a>
                 <p class="company-description">
                     Hey! This is a personal portfolio website where I post my projects, art, and more.
@@ -137,6 +160,7 @@
 
         </div>
     </footer>
-    <script src="./extensions.js"></script>
+    <script src="/extensions.js"></script>
+    <script src="/like-and-dislike.js"></script>
 </body>
 </html>

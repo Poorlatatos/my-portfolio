@@ -42,10 +42,10 @@ span {
   justify-content: flex-end;
 }
 .project h1 {
-  font-size: 102px;
-  line-height: 100px;
+  font-size: 96px;
+  line-height: 90px;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 .project > img {
@@ -114,6 +114,14 @@ span {
   .project span p {
       font-size: 14px;
   }
+  .project:hover span p {
+    width: max-content; /* Expand to show full text */
+    overflow: visible; /* Ensure the text is fully displayed */
+    transition: width 0.5s ease-in-out;
+  }
+  .img-removed-media{
+    display: none;
+  }
 }
 
 /* Adjustments for mobile screens */
@@ -140,4 +148,22 @@ span {
   .banner .bannerImg {
       height: 30vh;
   }
+  .project:hover span p {
+    width: max-content; /* Expand to show full text */
+    overflow: visible; /* Ensure the text is fully displayed */
+    transition: width 0.5s ease-in-out;
+  }
+  .img-removed-media{
+    display: none;
+  }
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px var(--transparent-light-color);
+  margin-top: 70px;
 }

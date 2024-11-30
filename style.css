@@ -1121,3 +1121,59 @@ body.light-theme{
     background: var(--gradient-color);
     color: var(--light-color);
 }
+
+.likes-dislikes {
+    display: flex;
+    gap: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.comments {
+    margin-top: 30px;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #81ac83;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding-left: 0;
+    color: #171819;
+}
+
+.comment-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.post-title{
+    font-size: var(--font-size-lg);
+    margin-bottom: 1rem;
+}
