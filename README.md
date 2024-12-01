@@ -66,3 +66,6 @@ It really helped my establish a basic understanding of what I was going to make 
 
 Figma Link:
 https://www.figma.com/design/48pGJzUHmvQRdtlKAVVOPM/ASG1?node-id=0-1&t=eX3NQbmzBDfAK0uU-1
+
+Github Link:
+https://github.com/Poorlatatos/my-portfolio
