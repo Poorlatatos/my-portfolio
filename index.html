@@ -12,94 +12,93 @@ gradient-text<!DOCTYPE html>
 <body>
 
     <header class="header" id="header">
-
-        <nav class = "navbar containter">
-
-            <a href="./index.html">
+        <!-- This is the header section containing the navigation bar -->
+        <nav class="navbar containter"> <!-- Navbar for navigation links -->
+            <a href="./index.html"> <!-- Logo linking back to the homepage -->
                 <h2 class="logo">Homepage</h2>
             </a>
-
+    
             <div class="menu" id="menu">
+                <!-- Navigation menu items -->
                 <ul class="list">
                     <li class="list-item">
-                        <a href="./index.html" class="list-link current">Home</a>
+                        <a href="./index.html" class="list-link current">Home</a> <!-- Active link -->
                     </li>
                     <li class="list-item">
-                        <a href="./blog.html" class="list-link ">Blogs</a>
+                        <a href="./blog.html" class="list-link">Blogs</a> <!-- Link to blogs page -->
                     </li>
                     <li class="list-item">
-                        <a href="./projects.html" class="list-link">Projects</a>
+                        <a href="./projects.html" class="list-link">Projects</a> <!-- Link to projects page -->
                     </li>
                     <li class="list-item">
-                        <a href="./socials.html" class="list-link">Socials</a>
+                        <a href="./socials.html" class="list-link">Socials</a> <!-- Link to socials page -->
                     </li>
                 </ul>
             </div>
-
+    
             <div class="list list-right">
+                <!-- Buttons for theme toggle and additional actions -->
                 <button class="btn place-items-center" id="theme-toggle-btn">
-                    <i class="ri-sun-line sun-icon"></i>
-                    <i class="ri-moon-line moon-icon"></i>
+                    <i class="ri-sun-line sun-icon"></i> <!-- Sun icon -->
+                    <i class="ri-moon-line moon-icon"></i> <!-- Moon icon -->
                 </button>
                 
                 <button class="btn place-items-center" id="search-icon">
-                    <!--<i class="ri-search-line"></i>-->
+                    <!-- Search button placeholder -->
                 </button>
-
+    
                 <button class="btn place-items-cente screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <!-- Mobile menu toggle icons -->
                     <i class="ri-menu-3-line open-menu-icon"></i>
                     <i class="ri-close-line close-menu-icon"></i>
                 </button>
-
             </div>
         </nav>
-
     </header>
-
+    
     <main class="main-content">
+        <!-- Main content area with a floating welcome box -->
         <div class="floating-box">
             <h2>Welcome to My Portfolio</h2>
-            <h3>
-                Explore my projects, blogs, and art creations. Enjoy your visit!
-            </h3>
+            <h3>Explore my projects, blogs, and art creations. Enjoy your visit!</h3>
         </div>
     </main>
     
-
     <div class="search-form-container container" id="search-form-container">
-
+        <!-- Search form overlay -->
         <div class="form-container-inner">
-            
             <form action="" class="form">
+                <!-- Search input field -->
                 <input type="text" class="form-input" placeholder="What are you looking for?">
                 <button class="btn form-btn" type="submit">
+                    <!-- Submit button with search icon -->
                     <i class="ri-search-line"></i>
                 </button>
             </form>
             <span class="form-note">
-                Or press ESC to close.
+                Or press ESC to close. <!-- Informational note -->
             </span>
         </div>
-
         <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <!-- Close button for the search form -->
             <i class="ri-close-line"></i>
         </button>
-
     </div>
-
+    
     <footer class="footer section">
-
+        <!-- Footer section with social media links and description -->
         <div class="footer-container container a-grid">
-
             <div class="company-data">
-                <a href="./index.html">
+                <a href="./index.html"> <!-- Footer logo linking back to homepage -->
                     <h2 class="logo">Homepage</h2>
                 </a>
                 <p class="company-description">
+                    <!-- Short description about the portfolio website -->
                     Hey! This is a personal portfolio website where I post my projects, art, and more.
                 </p>
-
+    
                 <ul class="list social-media">
+                    <!-- List of social media links -->
                     <li class="list-item">
                         <a href="https://www.instagram.com/polatatos/" class="list-link" target="_blank">
                             <i class="ri-instagram-line"></i>
@@ -115,12 +114,15 @@ gradient-text<!DOCTYPE html>
                         </a>
                     </li>
                 </ul>
-
-                <span class="copyright-notice">&copy; 2024[Jaasper's Portfolio, All rights reserved]</span>
+    
+                <span class="copyright-notice">
+                    <!-- Copyright notice -->
+                    &copy; 2024[Jaasper's Portfolio, All rights reserved]
+                </span>
             </div>
-
         </div>
     </footer>
-    <script src="/js/extensions.js"></script>
+    
+    <script src="/js/extensions.js"></script> <!-- JavaScript file for additional functionality -->
 </body>
 </html>

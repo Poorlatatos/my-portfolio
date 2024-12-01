@@ -53,8 +53,10 @@ Changelog - 1/12/2024 - 19:32 p.m.
 
 ---------------------------------------------------------------
 
+## User audience and Intended purpose
 The audience intended for this website is for either employers or just general members of the public who would want to view my website for inspiration for their works. The purpose of the website is to showcase all of my projects, talents and personal-experiences.
 
+## Who the website is catering for? Value that it is providing to users
 The value that the website provides is to give the viewers a more in-depth look at myself as a person and what I'm able to accomplish with my skillsets.
 
 I credit my external source code to a video called,
