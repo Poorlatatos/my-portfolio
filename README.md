@@ -62,3 +62,7 @@ The value that the website provides is to give the viewers a more in-depth look 
 I credit my external source code to a video called,
 - Frontend Development Course - Create a Blog with HTML & CSS -
 It really helped my establish a basic understanding of what I was going to make for my portfolio webpage.
+
+
+Figma Link:
+https://www.figma.com/design/48pGJzUHmvQRdtlKAVVOPM/ASG1?node-id=0-1&t=eX3NQbmzBDfAK0uU-1
