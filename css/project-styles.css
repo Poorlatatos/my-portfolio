@@ -59,9 +59,9 @@ span {
 .project span p {
   text-transform: uppercase;
   font-size: 16px;
-  width: 0px; /* Hidden initially */
-  white-space: nowrap; /* Prevent line wrapping */
-  overflow: hidden; /* Hide overflowing text */
+  width: 0px;
+  white-space: nowrap;
+  overflow: hidden;
   transition: width 0.5s ease-in-out;
 }
 
@@ -74,8 +74,8 @@ span {
   transition: all 0.5s ease-in-out;
 }
 .project:hover span p {
-  width: max-content; /* Expand to show full text */
-  overflow: visible; /* Ensure the text is fully displayed */
+  width: max-content;
+  overflow: visible;
   transition: width 0.5s ease-in-out;
 }
 .project:hover .banner .bannerImg {
@@ -115,8 +115,8 @@ span {
       font-size: 14px;
   }
   .project:hover span p {
-    width: max-content; /* Expand to show full text */
-    overflow: visible; /* Ensure the text is fully displayed */
+    width: max-content; 
+    overflow: visible; 
     transition: width 0.5s ease-in-out;
   }
   .img-removed-media{
@@ -149,8 +149,8 @@ span {
       height: 30vh;
   }
   .project:hover span p {
-    width: max-content; /* Expand to show full text */
-    overflow: visible; /* Ensure the text is fully displayed */
+    width: max-content;
+    overflow: visible;
     transition: width 0.5s ease-in-out;
   }
   .img-removed-media{
@@ -166,4 +166,13 @@ span {
   border-radius: 10px;
   box-shadow: 0px 4px 10px var(--transparent-light-color);
   margin-top: 70px;
+}
+
+.post-featured-image{
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

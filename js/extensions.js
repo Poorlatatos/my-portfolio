@@ -31,7 +31,7 @@ const toggleMenu = () => {
 
 menuToggleIcon.addEventListener('click', toggleMenu);
 
-// Open/close search form group
+
 const formOpenBtn = selectElement('#search-icon');
 const formCloseBtn = selectElement('#form-close-btn');
 const searchFormContainer = selectElement('#search-form-container');
@@ -39,7 +39,7 @@ const searchFormContainer = selectElement('#search-form-container');
 formOpenBtn.addEventListener('click' , () => searchFormContainer.classList.add('activated'));
 
 formCloseBtn.addEventListener('click' , () => searchFormContainer.classList.remove('activated'));
-// -- Close the search button with escape key
+
 window.addEventListener('keyup', event => {
     if(event.key === 'Escape') searchFormContainer.classList.remove('activated')
 });
@@ -64,8 +64,6 @@ themeToggleBtn.addEventListener('click', () => {
         localStorage.setItem('currentTheme');        
     }
 });
-
-//Swiper
 
 // Mock data for blog posts with tags
 const blogPosts = [

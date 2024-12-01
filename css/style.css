@@ -434,10 +434,10 @@ body.light-theme{
     padding: 1rem;
 }
 
-.trending-news-img-box{
-    position: relative;
+.featured-artwork-img-box{
     width: 100%;
-    height: var(--item-min-height-sm);
+    height: 100%;
+    justify-content: center;
 }
 
 .trending-number{
@@ -1176,4 +1176,14 @@ body.light-theme{
 .post-title{
     font-size: var(--font-size-lg);
     margin-bottom: 1rem;
+}
+
+#message{
+    resize: none;
+}
+
+.featured-artwork {
+    display: auto;
+    margin-top: 40px;
+    border: #171819 solid 3px;
 }

@@ -45,3 +45,18 @@ Changelog - 1/12/2024 - 04:36 a.m.
 - Added a new .css file for project styling.
 - Added in a gradient effect for project titles.
 - Changed all text boxes to static (Cannot be dragged and resized.)
+
+Changelog - 1/12/2024 - 19:32 p.m.
+- Added two extra blog pages.
+- Formatted all files into appropriate folders.
+- Added in "Featured Artworks" in blog.html.
+
+---------------------------------------------------------------
+
+The audience intended for this website is for either employers or just general members of the public who would want to view my website for inspiration for their works. The purpose of the website is to showcase all of my projects, talents and personal-experiences.
+
+The value that the website provides is to give the viewers a more in-depth look at myself as a person and what I'm able to accomplish with my skillsets.
+
+I credit my external source code to a video called,
+- Frontend Development Course - Create a Blog with HTML & CSS -
+It really helped my establish a basic understanding of what I was going to make for my portfolio webpage.
