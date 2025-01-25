@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev-blog | Art-Blog</title>
+    <title>Project: ASTEROIDS</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/project-styles.css">
+    <link rel="stylesheet" href="/css/project-details.css">
 </head>
 <body>
     <header class="header" id="header">
 
         <nav class = "navbar containter">
 
-            <a href="/blog.html">
-                <h2 class="logo">Dev-blog | Art-Blog</h2>
+            <a href="ASTEROIDS.html">
+                <h2 class="logo gradient-text-1">ASTEROIDS</h2>
             </a>
 
             <div class="menu" id="menu">
@@ -76,68 +76,84 @@
 
     </div>
 
-    <main>
-        <article class="blog-post">
-            <div class="container">
-                <!-- Blog Post Header -->
-                <header class="post-header">
-                    <h1 class="post-title">A new project being released!</h1>
-                    <div class="post-meta">
-                        <span>Written by <strong>Jaasper Lee</strong></span>
-                        <div class="article-data">
-                            <span>November-29th-2024</span>
-                            <span class="article-data-spacer"></span>
-                            <span>3-5 min read.</span>
-                        </div>
-                    </div>
-                    <img src="/img/Asteroids-banner-1.png" alt="Featured Image" class="post-featured-image">
-                </header>
+    <section class="project-details">
+        <div class="project-intro">
+            <h1>Project: ASTEROIDS</h1>
+            <p>
+                Welcome to <strong>ASTEROIDS</strong>, a modern reimagining of the iconic retro game from the golden age of arcades. 
+                Developed in Unity, this project combines nostalgic gameplay with sleek, modern design. 
+                Immerse yourself in a fast-paced world of interstellar battles, dynamic physics, and endless challenges.
+            </p>
+        </div>
+    
 
-                <!-- Like and Dislike Section -->
-                <section class="likes-dislikes">
-                    <button id="like-btn" class="btn"><i class="ri-thumb-up-line"></i> Like <span id="like-count">0</span></button>
-                    <button id="dislike-btn" class="btn"><i class="ri-thumb-down-line"></i> Dislike <span id="dislike-count">0</span></button>
-                </section>
+        <div class="image-section">
+            <img src="/img/Asteroids-banner-1.png" alt="Asteroids Gameplay Overview" class="project-image">
+            <p class="image-caption">Experience the thrill of piloting your ship through treacherous asteroid fields!</p>
+        </div>
+    
+        <div class="project-features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    **Dynamic Asteroid Physics**: Each asteroid has realistic collision physics, breaking into smaller fragments on impact.
+                </li>
+                <li>
+                    **Upgradeable Spaceship**: Unlock new abilities like rapid fire, shields, and hyperspace jumps as you progress.
+                </li>
+                <li>
+                    **Adaptive Difficulty**: Levels become progressively challenging, with faster asteroids and enemy ships joining the fray.
+                </li>
+                <li>
+                    **Leaderboards**: Compete globally to claim the highest score.
+                </li>
+            </ul>
+        </div>
+    
 
-                <!-- Blog Content -->
-                <section class="post-content">
-                    <p>
-                        Hey there! I'm back with another blog post. This time, I'm excited to announce that I'm releasing a new project! 
-                        I've been working on this project for a while now, and I'm thrilled to finally share it with you all.
-                    </p>
-                    <br></br>   
-                    <p>
-                        The project is called "ASTEROIDS". It's a modern reimagining of the iconic retro game from the golden age of arcades. 
-                        I developed this in Unity, I kinda developed this project just to test my skills and to see how far I can go with my skills.
-                        Even though I am not a professional game developer, I still wanted to try and make a game that I can be proud of.
-                        Granted, the end product isn't perfect, but I'm still proud of what I've accomplished.
-                        It took about 3 weeks to finish developing this project as I was doing it on and off, juggling school work at the same time.
-                    </p>
-                    <p>
+        <div class="image-section">
+            <img src="/img/Asteroids-promo-img.jpg" alt="Spaceship Design" class="project-image">
+            <p class="image-caption">Customize and upgrade your spaceship to dominate the asteroid belt.</p>
+        </div>
+    
+        <div class="gameplay-mechanics">
+            <h2>Gameplay Mechanics</h2>
+            <p>
+                At its core, ASTEROIDS stays true to its roots: the player controls a nimble spaceship in a top-down perspective,
+                navigating an ever-changing asteroid field. The challenge lies in maneuvering through the chaos while using your ship's weapons to destroy incoming threats.
+            </p>
+            <p>
+                Key mechanics include:
+            </p>
+            <ul>
+                <li>**Thrust and Momentum**: Use thrust controls to propel your ship, but beware—space has no brakes!</li>
+                <li>**Precision Shooting**: Aim and fire your ship's blasters to split or destroy asteroids before they collide with you.</li>
+            </ul>
+        </div>
+    
 
-                    </p>
-                </section>
-
-                <!-- Comments Section -->
-                <section class="comments">
-                    <h2>Comments</h2>
-                    <div class="comment-form">
-                        <textarea id="comment-input" placeholder="Leave a comment!" rows="4"></textarea>
-                        <button id="submit-comment" class="btn">Post</button>
-                    </div>
-                    <ul id="comment-list" class="comment-list"></ul>
-                </section>
-            </div>
-        </article>
-    </main>
+        <div class="image-section">
+            <img src="/img/Asteroids-img-1.png" alt="Gameplay Action" class="project-image">
+            <p class="image-caption">Blast your way through waves of asteroids and enemy ships!</p>
+        </div>
+    
+        <div class="project-reflection">
+            <h2>Developer's Reflection</h2>
+            <p>
+                Remaking ASTEROIDS was really a learning journey for me since I'm not a game developer by trade, and as such
+                I'm just a rookie at it. Thus I had to learn a lot of new things, such as Unity, C#, and game design principles that
+                span over the course of a few months. I'm proud of the result, and I hope you enjoy playing it as much as I enjoyed making it.
+            </p>
+        </div>
+    </section>
 
     <footer class="footer section">
 
         <div class="footer-container container a-grid">
 
             <div class="company-data">
-                <a href="/blog.html">
-                    <h2 class="logo">Dev-blog | Art-blog</h2>
+                <a href="/projects.html">
+                    <h2 class="logo">Projects</h2>
                 </a>
                 <p class="company-description">
                     Hey! This is a personal portfolio website where I post my projects, art, and more.
@@ -166,6 +182,5 @@
         </div>
     </footer>
     <script src="/js/extensions.js"></script>
-    <script src="/js/like-and-dislike.js"></script>
 </body>
 </html>
